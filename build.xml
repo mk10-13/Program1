@@ -1,0 +1,16 @@
+<project name="WebServer" default="compile" basedir=".">
+
+  <property name="src" location="."/>
+  <property name="build" location="."/>
+
+  <target name="compile">
+    <javac srcdir="${src}" destdir="${build}"/>
+  </target>
+
+  <target name="clean">
+    <delete>
+      <fileset dir="${build}" includes="*.class"/>
+    </delete>
+  </target>
+</project>
+
