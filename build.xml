@@ -12,5 +12,10 @@
       <fileset dir="${build}" includes="*.class"/>
     </delete>
   </target>
+	
+  <target name="run">
+    <exec executable="java">
+      <arg value="WebServer"/>
+    </exec>
+  </target>
 </project>
-
